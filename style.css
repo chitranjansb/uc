@@ -213,8 +213,11 @@ p {
 
 .hero-badge {
     position: absolute;
-    bottom: 40px;
-    left: 40px;
+    /* NEW LOCATION: Use top and right */
+    top: 40px; 
+    right: 40px; 
+    /* Remove 'bottom' and 'left' */
+    
     background: var(--white);
     padding: 20px 30px;
     border-radius: 12px;

@@ -1312,18 +1312,46 @@ p {
 }
 
 @media (max-width: 480px) {
-    h1 { font-size: clamp(2rem, 9vw, 3rem); }
+    /* TYPOGRAPHY: Slightly reduce max size of h1 for readability on small phones */
+    h1 { 
+        font-size: clamp(2rem, 10vw, 2.5rem); 
+        line-height: 1.1; /* Make line height tighter */
+    }
     h2 { font-size: clamp(1.8rem, 8vw, 2.5rem); }
     h3 { font-size: clamp(1.4rem, 6vw, 1.75rem); }
 
+    /* HERO SECTION: Reduce padding and ensure proper stacking */
     .hero {
-        padding: 120px 0 60px;
+        padding: 100px 0 50px; /* Reduced vertical padding */
+        text-align: center; /* Center align text content */
+    }
+    
+    /* Center the call-to-action button */
+    .cta-button {
+        width: 90%; /* Make button nearly full width */
+        margin: 0 auto;
+        display: flex; /* Ensure flex centering works */
+        justify-content: center;
+        padding: 16px 25px; /* Slightly reduced button padding */
     }
 
+    .hero-image {
+        /* Add some space above the image now that the badge is gone */
+        margin-top: 30px; 
+        /* Enforce a consistent aspect ratio if needed, or leave to default */
+        aspect-ratio: 4/3; 
+    }
+    
+    .hero-text .subtitle {
+        font-size: 1rem; /* Adjust subtitle size */
+    }
+
+    /* BADGE: Retain the display: none property to keep it hidden */
     .hero-badge {
-        display: none; /* Hide badge on very small screens */
+        display: none; 
     }
 
+    /* NAVIGATION AND OTHER ELEMENTS: Keep original styles */
     .nav-logo {
         font-size: 1.25rem;
     }

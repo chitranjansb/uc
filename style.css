@@ -1071,6 +1071,18 @@ p {
         aspect-ratio: 16/10;
     }
 
+    .hero-image {
+        order: 1; 
+        max-width: 600px;
+        margin: 0 auto;
+        /* Increase aspect ratio height for mobile. Was 16/10. */
+        aspect-ratio: 4/3; 
+        
+        /* Center the image content within its frame (optional, but helps position the cat/chair) */
+        object-position: center bottom;
+    }
+
+
     .hero-badge {
         bottom: 20px;
         left: 20px;

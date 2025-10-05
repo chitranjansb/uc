@@ -871,6 +871,17 @@ p {
     line-height: 1.6;
 }
 
+.contact-item.location-link {
+    text-decoration: none;
+    color: var(--text-primary); /* Ensure the heading color remains dark */
+    cursor: pointer;
+}
+
+.contact-item.location-link p {
+    /* Ensure paragraph text color is maintained */
+    color: var(--text-secondary);
+}
+
 /* FOOTER */
 .footer {
     background: var(--bg-dark);

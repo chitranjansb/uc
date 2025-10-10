@@ -338,10 +338,12 @@ p {
     transition: var(--transition);
 }
 
+/*
+
 .service-card:hover .service-image img {
     transform: scale(1.05);
 }
-
+*/
 .service-icon {
     position: absolute;
     top: 24px;

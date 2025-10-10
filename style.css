@@ -343,7 +343,7 @@ p {
 .service-card:hover .service-image img {
     transform: scale(1.05);
 }
-*/
+
 .service-icon {
     position: absolute;
     top: 24px;
@@ -358,6 +358,25 @@ p {
     font-size: 1.5rem;
     color: var(--accent-primary);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+*/
+.service-icon {
+    /* Increased size from 56px to 72px */
+    width: 72px; 
+    height: 72px;
+    
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Updated font size below */
+    
+    /* Slightly increased shadow for a lifted look */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15); 
 }
 
 .service-content {
